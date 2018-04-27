@@ -36,6 +36,7 @@ It follows the OAuth 2.0 for Native Apps best current practice
 
   s.source_files = "Source/*.{h,m}"
   s.requires_arc = true
+  s.pod_target_xcconfig = {'DEFINES_MODULE' => 'YES' }
 
   # iOS
   s.ios.source_files      = "Source/iOS/**/*.{h,m}"
