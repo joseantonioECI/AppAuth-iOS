@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AppAuth-Static"
-  s.version      = "0.92.0"
+  s.version      = "0.93.0"
   s.summary      = "AppAuth for iOS and macOS is a client SDK for communicating with OAuth 2.0 and OpenID Connect providers."
 
   s.description  = <<-DESC
@@ -31,7 +31,6 @@ It follows the OAuth 2.0 for Native Apps best current practice
   #       library won't help you obtain authorization grants on those platforms.
 
   s.platforms    = { :ios => "7.0", :osx => "10.9", :watchos => "2.0", :tvos => "9.0" }
-  s.static_framework = true
   s.source       = { :git => "https://github.com/openid/AppAuth-iOS.git", :tag => s.version }
 
   s.source_files = "Source/*.{h,m}"
