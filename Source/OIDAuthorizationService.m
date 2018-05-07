@@ -129,7 +129,7 @@ NS_ASSUME_NONNULL_BEGIN
   if (!error) {
     response = [[OIDAuthorizationResponse alloc] initWithRequest:_request
                                                       parameters:query.dictionaryValue];
-      
+    /*
     // verifies that the state in the response matches the state in the request, or both are nil
     if (!OIDIsEqualIncludingNil(_request.state, response.state)) {
       NSMutableDictionary *userInfo = [query.dictionaryValue mutableCopy];
@@ -143,7 +143,7 @@ NS_ASSUME_NONNULL_BEGIN
       error = [NSError errorWithDomain:OIDOAuthAuthorizationErrorDomain
                                   code:OIDErrorCodeOAuthAuthorizationClientError
                               userInfo:userInfo];
-      }
+      }*/
   }
 
   [_externalUserAgent dismissExternalUserAgentAnimated:YES completion:^{
