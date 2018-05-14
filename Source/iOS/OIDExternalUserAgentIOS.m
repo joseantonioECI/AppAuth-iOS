@@ -88,7 +88,7 @@ static id<OIDSafariViewControllerFactory> __nullable gSafariViewControllerFactor
   BOOL openedSafari = NO;
   NSURL *requestURL = [request externalUserAgentRequestURL];
 
-  if (@available(iOS 11.0, *)) {
+  if (@available(iOS 11.0, *) && false) {
     NSString *redirectScheme = request.redirectScheme;
     SFAuthenticationSession* authenticationVC =
         [[SFAuthenticationSession alloc] initWithURL:requestURL
@@ -143,7 +143,7 @@ static id<OIDSafariViewControllerFactory> __nullable gSafariViewControllerFactor
   
   [self cleanUp];
   
-  if (@available(iOS 11.0, *)) {
+  if (@available(iOS 11.0, *) && false) {
     [authenticationVC cancel];
     if (completion) completion();
   } else if (@available(iOS 9.0, *)) {
